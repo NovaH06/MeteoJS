@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(/miami.png);
+  }
+  h1 {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 35px;
+  }
+  .recherche {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-top: 10px;
+  }
+
+  .weather-icon {
+    display: none;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto; 
+  }
+  h3 {
+      display: none;
+  }
+  .container {
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+      background-color: hsla(0, 0%, 100%, 0.7);
+      width: 35%;
+      height: 650px;
+      margin-left: 490px;
+      border-radius: 10%;
+  }
+  .button {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-top: 10px;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0cf;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #008fb3;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.button:hover {
+  color: #fff;
+}
+.button:hover:before {
+  width: 100%;
+}
+
+
+* {
+  font-family: Arial;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
